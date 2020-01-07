@@ -19,7 +19,7 @@ namespace operations.Tests
         [TestMethod()]
         public void QuotientIntTest()
         {
-            Assert.AreEqual(0, Division.Quotient(a, b));
+            Assert.AreEqual(2, Division.Quotient(b, a));
         }
     }
 }
