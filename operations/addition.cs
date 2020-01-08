@@ -6,7 +6,7 @@
         {
             return a + b;
         }
-
+        
         public static double Sum(double a, double b)
         {
             return a + b;

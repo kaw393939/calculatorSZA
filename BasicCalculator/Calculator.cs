@@ -1,20 +1,35 @@
-﻿using System;
-using operations;
+﻿using operations;
+using Add;
+using Divide;
+
 namespace BasicCalculator
 {
-    public class Calculator
+    public interface ICalcultorBasic
     {
-        public int result;
+        public dynamic Add(dynamic a, dynamic b);
+        public dynamic Divide(dynamic a, dynamic b);
 
-        public int Add(int a, int b)
+    }
+
+    public class Calculator : IAdd, IDivide
+    {
+        // Creating objects of Geeks1 and Geeks2 class 
+        Adding add = new Adding();
+        Div divide = new Div();
+        public dynamic result;
+
+        public dynamic Add(dynamic a, dynamic b)
         {
-            result = Addition.Sum(a, b);
+            result = add.Add(a, b);
             return result;
         }
-        public int Divide(int a, int b)
+
+        public dynamic Divide(dynamic a, dynamic b)
         {
-            result = Division.Quotient(a, b);
+            result = divide.Divide(a, b);
             return result;
+
         }
+
     }
 }
