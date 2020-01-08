@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BasicCalculator;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BasicCalculator.Tests
 {
@@ -18,10 +14,9 @@ namespace BasicCalculator.Tests
 
             Assert.AreEqual(3, c);
             Assert.AreEqual(3, calculator.result);
-
         }
-        [TestMethod()]
 
+        [TestMethod()]
         public void AddIntDoubleTest()
         {
             Calculator calculator = new Calculator();
@@ -31,18 +26,43 @@ namespace BasicCalculator.Tests
 
             Assert.AreEqual(3.02, c);
             Assert.AreEqual(3.02, calculator.result);
-
         }
+
+        [TestMethod()]
+        public void AddArrayDoubleTest()
+        {
+            Calculator calculator = new Calculator();
+            double a = 1.01;
+            double b = 2.01;
+            double[] values = { a, b };
+
+            double c = calculator.Add(values);
+
+            Assert.AreEqual(3.02, c);
+            Assert.AreEqual(3.02, calculator.result);
+        }
+
+        [TestMethod()]
+        public void AddArrayIntTest()
+        {
+            Calculator calculator = new Calculator();
+            int[] values = { 1, 2 };
+
+            int c = calculator.Add(values);
+
+            Assert.AreEqual(3, c);
+            Assert.AreEqual(3, calculator.result);
+        }
+
         [TestMethod()]
         public void DivideTest()
         {
             Calculator calculator = new Calculator();
 
-            int c = calculator.Divide(2, 1);
+            double c = calculator.Divide(2, 1);
 
             Assert.AreEqual(2, c);
             Assert.AreEqual(2, calculator.result);
-
         }
     }
 }

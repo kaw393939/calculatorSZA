@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace operations.Tests
 {
@@ -13,7 +12,8 @@ namespace operations.Tests
         [TestMethod()]
         public void QuotientIntDivideZeroTest()
         {
-            Assert.ThrowsException<DivideByZeroException>(() => Division.Quotient(a, c));
+            double d = Division.Quotient(a, c);
+            Assert.IsTrue(double.IsInfinity(d));
         }
 
         [TestMethod()]

@@ -1,4 +1,6 @@
-﻿namespace operations
+﻿using System;
+
+namespace operations
 {
     public static class Addition
     {
@@ -6,7 +8,7 @@
         {
             return a + b;
         }
-        
+
         public static double Sum(double a, double b)
         {
             return a + b;
@@ -14,13 +16,13 @@
 
         public static double Sum(double[] arrayA)
         {
-            double c = 0.0;
+            double c = 0;
 
             foreach (double a in arrayA)
             {
                 c = Sum(a, c);
             }
-
+            c = Math.Round(c, 2, MidpointRounding.ToEven);
             return c;
         }
 
