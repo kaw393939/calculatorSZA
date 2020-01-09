@@ -2,10 +2,6 @@
 
 namespace Divide
 {
-    public interface IDivide
-    {
-        public double Divide(dynamic a, dynamic b);
-    }
 
     public class Div : IDivide
     {

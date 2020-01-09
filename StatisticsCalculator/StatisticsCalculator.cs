@@ -4,7 +4,7 @@ namespace StatisticsCalculator
 {
     public class StatisticsCalculator : Calculator
     {
-        public double Mean(int[] values)
+        public dynamic Mean(dynamic values)
         {
             var sum = Add(values);
             var valueCount = values.Length;
