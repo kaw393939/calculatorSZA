@@ -1,8 +1,4 @@
-﻿using System;
-using operations;
-using Helpers;
-
-namespace StatOperations
+﻿namespace StatOperations
 {
     public class StatOperations
     {

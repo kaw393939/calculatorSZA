@@ -1,8 +1,7 @@
 ﻿using BasicCalculator;
-using StatOperations;
+
 namespace StatisticsCalculator
 {
-
     public class StatisticsCalculator : Calculator, IStatsCalc
     {
         public dynamic Mean(dynamic values)

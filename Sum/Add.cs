@@ -2,7 +2,6 @@
 
 namespace Add
 {
-
     public class Adding : IAdd
 
     {
@@ -19,6 +18,5 @@ namespace Add
             result = Addition.Sum(values);
             return result;
         }
-
     }
 }

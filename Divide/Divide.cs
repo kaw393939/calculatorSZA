@@ -2,7 +2,6 @@
 
 namespace Divide
 {
-
     public class Div : IDivide
     {
         public double result;

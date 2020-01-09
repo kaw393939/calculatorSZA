@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StatisticsCalculator
+﻿namespace StatisticsCalculator
 {
     public interface IStatsCalc
     {

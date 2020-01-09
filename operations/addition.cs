@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace operations
+﻿namespace operations
 {
     public static class Addition
     {
@@ -22,7 +20,7 @@ namespace operations
             {
                 c = Sum(a, c);
             }
-            return Helpers.Rounding.RoundTwoDecimalPlaces(c);
+            return c;
         }
 
         public static int Sum(int[] arrayA)
