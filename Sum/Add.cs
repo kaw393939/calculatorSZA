@@ -20,12 +20,5 @@ namespace Add
             return result;
         }
 
-        /*
-                public double Add(double[] values)
-                {
-                    result = Addition.Sum(values);
-                    return result;
-                }
-            */
     }
 }

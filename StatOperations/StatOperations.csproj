@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BasicCalculator\BasicCalculator.csproj" />
-    <ProjectReference Include="..\StatOperations\StatOperations.csproj" />
+    <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\operations\operations.csproj" />
   </ItemGroup>
 
 </Project>

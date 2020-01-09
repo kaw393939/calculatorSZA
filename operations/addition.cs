@@ -22,8 +22,7 @@ namespace operations
             {
                 c = Sum(a, c);
             }
-            c = Math.Round(c, 2, MidpointRounding.ToEven);
-            return c;
+            return Helpers.Rounding.RoundTwoDecimalPlaces(c);
         }
 
         public static int Sum(int[] arrayA)
