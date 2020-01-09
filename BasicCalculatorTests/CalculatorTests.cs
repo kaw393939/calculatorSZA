@@ -13,7 +13,7 @@ namespace BasicCalculator.Tests
             int c = calculator.Add(1, 2);
 
             Assert.AreEqual(3, c);
-            Assert.AreEqual(3, calculator.result);
+            Assert.AreEqual(3, calculator.Result);
         }
 
         [TestMethod()]
@@ -25,7 +25,7 @@ namespace BasicCalculator.Tests
             double c = calculator.Add(a, b);
 
             Assert.AreEqual(3.02, c);
-            Assert.AreEqual(3.02, calculator.result);
+            Assert.AreEqual(3.02, calculator.Result);
         }
 
         [TestMethod()]
@@ -39,7 +39,7 @@ namespace BasicCalculator.Tests
             double c = calculator.Add(values);
 
             Assert.AreEqual(3.02, c);
-            Assert.AreEqual(3.02, calculator.result);
+            Assert.AreEqual(3.02, calculator.Result);
         }
 
         [TestMethod()]
@@ -51,7 +51,7 @@ namespace BasicCalculator.Tests
             int c = calculator.Add(values);
 
             Assert.AreEqual(3, c);
-            Assert.AreEqual(3, calculator.result);
+            Assert.AreEqual(3, calculator.Result);
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace BasicCalculator.Tests
             double c = calculator.Divide(2, 1);
 
             Assert.AreEqual(2, c);
-            Assert.AreEqual(2, calculator.result);
+            Assert.AreEqual(2, calculator.Result);
         }
     }
 }

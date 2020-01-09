@@ -7,8 +7,8 @@ namespace StatisticsCalculator
     {
         public dynamic Mean(dynamic values)
         {
-            result = StatOperations.StatOperations.Mean(values);
-            return result;
+            Result = StatOperations.StatOperations.Mean(values);
+            return Result;
         }
     }
 }

@@ -6,28 +6,28 @@ namespace BasicCalculator
     public class Calculator : IAdd, IDivide
     {
         // Creating objects of Geeks1 and Geeks2 class
-        private Adding add = new Adding();
+        private readonly Adding add = new Adding();
 
-        private Div divide = new Div();
+        private readonly Div divide = new Div();
 
-        public dynamic result;
+        public dynamic Result{get; set;}
 
         public dynamic Add(dynamic a, dynamic b)
         {
-            result = add.Add(a, b);
-            return result;
+            Result = add.Add(a, b);
+            return Result;
         }
 
         public dynamic Add(dynamic values)
         {
-            result = add.Add(values);
-            return result;
+            Result = add.Add(values);
+            return Result;
         }
 
         public double Divide(dynamic a, dynamic b)
         {
-            result = divide.Divide(a, b);
-            return result;
+            Result = divide.Divide(a, b);
+            return Result;
         }
     }
 }
