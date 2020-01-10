@@ -4,14 +4,9 @@ namespace Helpers
 {
     public class Rounding
     {
-        public static int RoundTwoDecimalPlaces(int value)
+        public static double RoundNumberToDecimalPlaces(int decimalPlace, double value)
         {
-            return value;
-        }
-
-        public static double RoundTwoDecimalPlaces(double value)
-        {
-            return Math.Round(value, 2, MidpointRounding.ToEven);
+            return Math.Round(value, decimalPlace, MidpointRounding.ToEven);
         }
     }
 }

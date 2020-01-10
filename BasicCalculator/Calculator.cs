@@ -5,6 +5,7 @@ namespace BasicCalculator
 {
     public class Calculator : IAdd, IDivide
     {
+        private readonly int DecimalPlace;
         private readonly Adding add = new Adding();
         private readonly Div divide = new Div();
         private dynamic result;
@@ -13,21 +14,30 @@ namespace BasicCalculator
         {
             get
             {
+
+                
                 string type = result.GetType().ToString();
 
-                if (type == "Int")
+  
+                if (type == "System.Int32")
                 {
                     return result;
                 }
                 else
                 {
-                    return Helpers.Rounding.RoundTwoDecimalPlaces(result);
+                    return Helpers.Rounding.RoundNumberToDecimalPlaces(DecimalPlace, result);
                 }
+                
             }
             set
             {
                 result = value;
             }
+        }
+
+        public Calculator(int decimalPlace = 2)
+        {
+            DecimalPlace = decimalPlace;
         }
 
         public dynamic Add(dynamic a, dynamic b)

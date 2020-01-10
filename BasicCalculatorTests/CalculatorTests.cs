@@ -19,7 +19,7 @@ namespace BasicCalculator.Tests
         [TestMethod()]
         public void AddIntDoubleTest()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = new Calculator(10);
             int a = 1;
             double b = 2.02;
             double c = calculator.Add(a, b);
